@@ -175,7 +175,6 @@
         <label class="chk"><input type="checkbox" id="inew"> <span data-i18n="f_new">YENİ</span></label>
         <label class="chk"><input type="checkbox" id="itoday"> <span data-i18n="f_today">Bugün</span></label>
         <label class="chk"><input type="checkbox" id="isaved"> <span data-i18n="f_saved">⭐ kayıtlılar</span></label>
-        <button class="ghost" id="irefresh" data-i18n="btn_refresh">Yenile</button>
         <button id="iharvest" data-i18n="btn_harvest">⚡ Şimdi Tara</button>
         <span class="count" id="icount"></span>
       </div>
@@ -675,7 +674,6 @@ async function ask(){
 }
 g("askgo").addEventListener("click", ask);
 g("askq").addEventListener("keydown", e=>{ if(e.key==="Enter") ask(); });
-g("irefresh").addEventListener("click", loadIntel);
 async function harvest(){
   const btn=g("iharvest");
   if(!CFG.harvestUrl){ toast(t("harvest_need_url")); return; }

@@ -8,8 +8,8 @@
 // say what the tool really does and exactly how the operator can use it.
 
 const CONFIG = {
-  keywords: ["image to video","ui ux design","shadcn","ai agent","n8n automation",
-             "faceless video","supabase","mcp server","react component library"],
+  keywords: ["ai agent","mcp server","rag pipeline","vector database","llm framework",
+             "ai coding assistant","workflow automation","developer tools","open source saas"],
   // WHO is this for? The brain scores every item against THIS profile. Edit it to your own
   // work/goals — this is the only "personal" knob, and it stays out of git if you keep keys in n8n.
   profile: "a solo builder / small dev agency; values tools that save time, can be resold as a service, or unlock a new offering; prefers free or self-hostable",
