@@ -79,11 +79,16 @@ answers with citations, and the Library auto‑grows.
 
 ### 6) Optional — ⚡ Harvest now (on-demand trigger)
 The Intel tab has a **⚡ Harvest now** button to run the engine on demand (not just the daily
-schedule). To wire it: in n8n put a **Webhook trigger (GET, path `vektra-harvest`)** in front of the
-engine Code node, and end with **Respond to Webhook** — set the header `Access-Control-Allow-Origin: *`
-and "respond when the last node finishes" so it returns after the run. Optionally guard it with a
-`?key=` token (same pattern as the Ask node). Paste that URL into **Settings → Harvest webhook URL**.
+schedule). To wire it: in n8n put a **Webhook trigger (GET, path `vektra-harvest`)** in front of a
+Code node holding [`00-meta/harvest-node.js`](../00-meta/harvest-node.js), and end with **Respond to
+Webhook** — set the header `Access-Control-Allow-Origin: *` and "respond when the last node finishes"
+so it returns after the run. Optionally guard it with a `?key=` token (same pattern as the Ask node).
+Paste that URL into **Settings → Harvest webhook URL**.
 Clicking the button runs a fresh harvest (~1–2 min) and auto-refreshes the feed.
+
+**Search-driven harvest:** when you type a term in the Intel search box and hit ⚡, the dashboard
+passes it as `?q=<term>` — `harvest-node.js` then researches *that* term live (GitHub + Hacker News),
+instead of the default keyword sweep. Empty box = general sweep.
 
 > **Why a button, not live-on-load:** harvesting on every page open would be slow (minutes), costly
 > (every visit burns API credits) and insecure (the service/LLM keys can't live in the browser). The
