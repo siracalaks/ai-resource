@@ -16,3 +16,7 @@ Thumbs.db
 
 # ── local scratch ──
 *.local
+
+# screen recordings — keep videos out of git (use Skool/YouTube)
+*.mp4
+*.mov
