@@ -21,13 +21,9 @@ and an **auto‑engine** that runs itself on your own infra.
 
 ## 📸 Screenshots
 
-_Drop your PNGs in [`docs/img/`](docs/img) and uncomment the lines below._
-
-<!--
-![Library tab](docs/img/library.png)
-![How it works](docs/img/howto.png)
-![Ask — cited answer](docs/img/ask.png)
--->
+![Live Intelligence feed — self-harvested & AI-scored](docs/img/intel.png)
+![Library — 190+ curated dev/AI tools, fully offline](docs/img/library.png)
+![Ask — cited answers synthesized over your whole library](docs/img/ask.png)
 
 ## ✨ What you get
 
