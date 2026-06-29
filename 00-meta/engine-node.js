@@ -181,10 +181,10 @@ if(CONFIG.gemini && rows.length){
 }
 let stored=0;
 if(rows.length){
-  try{ await http({method:"POST",url:CONFIG.supabaseUrl+"/rest/v1/intel_items",
+  try{ await http({method:"POST",url:CONFIG.supabaseUrl+"/rest/v1/intel_items?on_conflict=content_hash",json:true,
     headers:{apikey:CONFIG.supabaseKey,Authorization:"Bearer "+CONFIG.supabaseKey,"Content-Type":"application/json",Prefer:"resolution=ignore-duplicates,return=minimal"},
     body:rows}); stored=rows.length;
-  }catch(e){ return [{json:{error:String(e)}}]; }
+  }catch(e){ const b=e&&e.response&&e.response.body; return [{json:{error:(b&&b.message)||(e&&e.message)||String(e)}}]; }
 }
 
 // AUTO-LIBRARIAN: promote high-value NEW items straight into the cloud library (library_embeddings)
@@ -219,7 +219,7 @@ async function promoteLibrary(rs){
       source_url:r.external_url, embedding:r.embedding});
   }
   if(!cards.length) return 0;
-  try{ await http({method:"POST",url:CONFIG.supabaseUrl+"/rest/v1/library_embeddings",
+  try{ await http({method:"POST",url:CONFIG.supabaseUrl+"/rest/v1/library_embeddings",json:true,
     headers:{apikey:CONFIG.supabaseKey,Authorization:"Bearer "+CONFIG.supabaseKey,"Content-Type":"application/json",Prefer:"return=minimal"},
     body:cards}); return cards.length;
   }catch(e){ return 0; }
