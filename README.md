@@ -5,7 +5,10 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Zero dependencies](https://img.shields.io/badge/dashboard-zero%20dependencies%20%C2%B7%20no%20build-success)
 ![Stack](https://img.shields.io/badge/stack-n8n%20%C2%B7%20Supabase%20%C2%B7%20Claude%20%C2%B7%20Gemini-6366f1)
+![by VektraDev](https://img.shields.io/badge/by-VektraDev-6366f1)
 [![Türkçe](https://img.shields.io/badge/lang-Türkçe-red.svg)](README.tr.md)
+
+> 🏗️ **A [VektraDev](#-about-vektradev) open-source product** — built to be self-hosted, forked, and made your own.
 
 **Vektra harvests the internet for useful dev/AI tools every morning, *reads* each one with
 an LLM, scores it for your work, answers your questions over the whole thing — and grows its
@@ -104,6 +107,11 @@ docs/INSTALL.md                full setup guide
 - Put the dashboard behind Basic Auth if you host it publicly; the Sor webhook can require a token.
 - Cost: free backbone + ~**$3–8/month** for Claude Haiku & Gemini.
 
+## 🏗️ About VektraDev
+**Vektra** is an open-source product by **VektraDev** — practical AI + automation tooling for
+developers and small teams. The philosophy: self-host first, keep your data and keys, and make
+the tools your own. Fork it, adapt the `CONFIG.profile` to your work, ship it.
+
 ## 🤝 Contributing & license
 PRs welcome — add a tool card, fix a recipe, or translate the UI. See **[CONTRIBUTING.md](CONTRIBUTING.md)**.
-Licensed under the **[MIT License](LICENSE)**.
+Licensed under the **[MIT License](LICENSE)** · © VektraDev.

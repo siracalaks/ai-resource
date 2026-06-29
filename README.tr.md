@@ -7,6 +7,8 @@ açık-kaynak bir sistem. İki parça: **kurulumsuz panel** (bugün çift tıkla
 **otomatik motor** (kendi sunucunda kendi kendine çalışır).
 
 > İngilizce için: **[README.md](README.md)** · Lisans: **MIT** · Kurulum: **[docs/INSTALL.md](docs/INSTALL.md)**
+>
+> 🏗️ Bir **VektraDev** açık-kaynak ürünüdür — kendi sunucunda barındır, fork'la, kendine göre uyarla.
 
 ## 🖱️ Tek çatı — Vektra Komuta Merkezi (kurulum yok)
 
@@ -66,5 +68,10 @@ Kaynaklar (ücretsiz omurga + opt-in Apify) → n8n (sabah) → Derin Oku → Be
 Omurga $0 · Supabase/n8n ücretsiz/ucuz katmanlar · Claude Haiku + Gemini ayda
 ~**$3–8** · Apify (opsiyonel) haftada kuruşlar. Ayrıntı: [`00-meta/modules.yaml`](00-meta/modules.yaml).
 
+## VektraDev hakkında
+**Vektra**, **VektraDev**'in açık-kaynak bir ürünüdür — geliştiriciler ve küçük ekipler için pratik
+AI + otomasyon araçları. Felsefe: önce kendi sunucunda barındır, veri ve anahtarların sende kalsın,
+araçları kendine göre uyarla. Fork'la, `CONFIG.profile`'ı işine göre değiştir, yayına al.
+
 ## Katkı & Lisans
-Katkı: **[CONTRIBUTING.md](CONTRIBUTING.md)** · Lisans: **[MIT](LICENSE)**.
+Katkı: **[CONTRIBUTING.md](CONTRIBUTING.md)** · Lisans: **[MIT](LICENSE)** · © VektraDev.
