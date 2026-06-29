@@ -19,6 +19,16 @@ and an **auto‑engine** that runs itself on your own infra.
 
 ---
 
+## 📸 Screenshots
+
+_Drop your PNGs in [`docs/img/`](docs/img) and uncomment the lines below._
+
+<!--
+![Library tab](docs/img/library.png)
+![How it works](docs/img/howto.png)
+![Ask — cited answer](docs/img/ask.png)
+-->
+
 ## ✨ What you get
 
 - 📚 **A curated tool library** (~200 cards across 9 build stages: ideation → design → frontend →

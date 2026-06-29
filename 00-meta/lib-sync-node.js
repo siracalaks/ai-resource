@@ -8,7 +8,7 @@ const CFG = {
   supabaseKey: "PASTE_SERVICE_ROLE_KEY",      // reads library_embeddings
   github: "PASTE_GITHUB_PAT",                  // PAT with `repo` (contents:write) scope
   ghOwner: "your-github-username",
-  ghRepo: "ai-resource",
+  ghRepo: "vektra",
   ghBranch: "master",
 };
 const http = this.helpers.httpRequest;
