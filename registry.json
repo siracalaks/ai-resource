@@ -2165,5 +2165,16 @@
     "status": "watch",
     "added": "2026-06-29",
     "source_url": "https://aitestkitchen.withgoogle.com/tools/video-fx"
+  },
+  {
+    "name": "transformers",
+    "stage": "09-learning-reference",
+    "type": "library",
+    "domain": "ml-framework",
+    "cost": "",
+    "conn_type": "",
+    "status": "watch",
+    "added": "2026-06-30",
+    "source_url": "https://github.com/huggingface/transformers"
   }
 ]
